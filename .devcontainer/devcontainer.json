@@ -3,6 +3,7 @@
 {
 	"name": "Python 3",
 	"image": "mlrun/mlrun:unstable",
+	"forwardPorts": ["mlrun-ui:8060", "nuclio:8070", "mlrun-api:8080"],
 	"containerEnv": { "MLRUN_ENV_FILE": "${localWorkspaceFolder}/mlrun.env" },
 	// Configure tool-specific properties.
 	"customizations": {
