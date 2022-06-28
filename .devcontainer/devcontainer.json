@@ -15,7 +15,7 @@
 		}
 	},
 	"forwardPorts": ["mlrun-ui:8060", "nuclio:8070", "mlrun-api:8080"],
-	"containerEnv": { "MLRUN_ENV_FILE": "${localWorkspaceFolder}/mlrun.env" },
+	"containerEnv": { "MLRUN_ENV_FILE": "${containerWorkspaceFolder}/mlrun.env", "MLE2": "${containerEnv:CODESPACE_VSCODE_FOLDER}/mlrun.env" },
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
