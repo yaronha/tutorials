@@ -48,8 +48,8 @@
 	"portsAttributes": {"8060": {"label": "MLRun UI"}, "8070": {"label": "Nuclio UI"}},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "mkdir ~/mlrun-data -p",
-	"postStartCommand": "code $CODESPACE_VSCODE_FOLDER/tutorial/01-mlrun-basics.ipynb",
+	//"postCreateCommand": "mkdir ~/mlrun-data -p",
+	//"postStartCommand": "code $CODESPACE_VSCODE_FOLDER/tutorial/01-mlrun-basics.ipynb",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
