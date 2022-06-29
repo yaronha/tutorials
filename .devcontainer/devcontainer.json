@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.236.0/containers/python-3
 {
-	"name": "Python 3",
+	"name": "MLRun tutorials",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
@@ -44,17 +44,18 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8060, 8070, 8080],
-	"portsAttributes": {"8060": {"label": "MLRun UI"}, "8070": {"label": "Nuclio UI"}},
+	//"forwardPorts": [8060, 8070, 8080],
+	"runArgs": [ "--network", "host"],
+	"portsAttributes": {"8060": {"label": "MLRun UI"}, "8070": {"label": "Nuclio UI"}, "8080": {"label": "MLRun API"}},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	//"postCreateCommand": "mkdir ~/mlrun-data -p",
-	//"postStartCommand": "code $CODESPACE_VSCODE_FOLDER/tutorial/01-mlrun-basics.ipynb",
+	"postStartCommand": "chmod +x $CODESPACE_VSCODE_FOLDER/start.sh",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
-		"docker-in-docker": "latest",
+		"docker-from-docker": "latest",
 		"git": "latest",
 		"jupyterlab": "latest"
 	}
