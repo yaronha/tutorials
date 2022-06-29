@@ -44,7 +44,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	//"forwardPorts": [8060, 8070, 8080],
+	"forwardPorts": [8060, 8070, 8080],
 	"runArgs": [ "--network", "host"],
 	"portsAttributes": {"8060": {"label": "MLRun UI"}, "8070": {"label": "Nuclio UI"}, "8080": {"label": "MLRun API"}},
 
