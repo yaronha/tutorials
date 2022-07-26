@@ -1,9 +1,10 @@
-name: mlrun2
+name: mlrun3
 dependencies:
   - python=3.9
   - pip
   - conda
   - conda:
+    - ipykernel 
     - plotly~=5.4
     - scikit-learn~=1.0
     - graphviz
