@@ -1,0 +1,12 @@
+name: mlrun
+dependencies:
+  - python=3.9
+  - pip
+  - conda
+  - conda:
+    - plotly~=5.4
+    - scikit-learn~=1.0
+    - graphviz
+variables:
+  MY_VAR: something
+  OTHER_VAR: ohhhhya
