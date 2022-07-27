@@ -1,13 +1,12 @@
-name: mlrun3
+name: mlrun
 dependencies:
   - python=3.9
-  - pip
-  - conda
-  - conda:
-    - ipykernel 
-    - plotly~=5.4
-    - scikit-learn~=1.0
-    - graphviz
+  - ipykernel 
+  - plotly~=5.4
+  - scikit-learn~=1.0
+  - graphviz
+  - pip:
+    - mlrun
 variables:
-  MY_VAR: something
-  OTHER_VAR: ohhhhya
+  MLRUN_ENV_FILE: ./tutorials/mlrun.env
+
