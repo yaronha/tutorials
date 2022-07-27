@@ -8,5 +8,5 @@ dependencies:
   - pip:
     - mlrun
 variables:
-  MLRUN_ENV_FILE: ./tutorials/mlrun.env
+  MLRUN_ENV_FILE: ~/tutorials/mlrun.env
 
